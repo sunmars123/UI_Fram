@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+    <!--locator of page map info -->
+    <page pageName="com.maste.pageAction.LoginIndex">  //每个页面的xml文件Page名一定要和页面名相对应
+        <!--Locator lists -->
+        <locator type="xpath" timeOut="10" value="//input[@id='ctl03_ctl44']">OA_UserNameInputBox</locator>
+        <locator type="xpath" timeOut="10" value="//input[@id='ctl03_ctl46']">OA_loginPasswordInputBox</locator>
+        <locator type="xpath" timeOut="10" value="//input[@id='ctl03_ctl48']">LoginButton</locator>
+    </page>
+</map>
