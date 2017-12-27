@@ -11,7 +11,7 @@ public class ReadProperties {
 	 private static ResourceBundle rb;  
 	 private static BufferedInputStream inputStream;  
 	 static {   
-		 String proFilePath = System.getProperty("user.dir") +"\\PropertiesFolder\\config.properties";  
+		 String proFilePath = "PropertiesFolder\\config.properties";
 		 try {  
 	        inputStream = new BufferedInputStream(new FileInputStream(proFilePath));  
 	            rb = new PropertyResourceBundle(inputStream);  
@@ -28,5 +28,5 @@ public class ReadProperties {
 	 public final static String ChromeDriver = rb.getString("chromedriver");
 	 public final static String KillChromeDriver = rb.getString("killchrome");
 	 public final static String ChromeProperty = rb.getString("chromeProperty");
-	 public final static String ClassBytype = rb.getString("Bytype");
+//	 public final static String ClassBytype = rb.getString("Bytype");
 }
